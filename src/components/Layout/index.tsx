@@ -1,4 +1,3 @@
-import { Container } from "@/styles/globalStyledComponents";
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -8,11 +7,11 @@ interface LayoutProps {
 
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <>
+    <body>
       <Header />
       {children}
       <Footer />
-    </>
+    </body>
   );
 };
 

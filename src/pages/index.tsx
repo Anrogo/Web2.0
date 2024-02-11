@@ -1,11 +1,14 @@
-import React from 'react';
-import Home from "@/components/Home";
+import React from "react";
 import MainLayout from "@/components/Layout";
 
-const Entry: React.FC = () => {
-  return(
+interface EntryProps {
+  page: JSX.Element;
+}
+
+const Entry: React.FC<EntryProps> = ({page}) => {
+  return (
     <MainLayout>
-        <Home />
+      {page}
     </MainLayout>
   );
 };
