@@ -1,5 +1,6 @@
 import React from "react";
 import MainLayout from "@/components/Layout";
+import Home from "@/components/Home";
 
 interface EntryProps {
   page: JSX.Element;
@@ -8,7 +9,7 @@ interface EntryProps {
 const Entry: React.FC<EntryProps> = ({page}) => {
   return (
     <MainLayout>
-      {page}
+      <Home />
     </MainLayout>
   );
 };

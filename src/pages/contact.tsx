@@ -1,13 +1,13 @@
 import React from "react";
 import MainLayout from "@/components/Layout";
-import AboutMe from "@/components/About-me";
+import Contact from "@/components/Contact";
 
-const AboutMePage: React.FC = () => {
+const ContactPage: React.FC = () => {
   return (
     <MainLayout>
-      <AboutMe />
+      <Contact />
     </MainLayout>
   );
 };
 
-export default AboutMePage;
+export default ContactPage;

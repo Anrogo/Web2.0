@@ -6,12 +6,13 @@ interface LayoutProps {
 }
 
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
+  const headerType = children.type.name;
   return (
-    <body>
-      <Header />
+    <div>
+      <Header type={headerType}/>
       {children}
       <Footer />
-    </body>
+    </div>
   );
 };
 
