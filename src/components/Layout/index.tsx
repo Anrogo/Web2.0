@@ -1,5 +1,6 @@
 import Header from "../Header";
 import Footer from "../Footer";
+import { Container, FontStyles } from "@/styles/globalStyledComponents";
 
 interface LayoutProps {
   children: JSX.Element;
@@ -8,11 +9,12 @@ interface LayoutProps {
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   const headerType = children.type.name;
   return (
-    <div>
+    <Container>
+      <FontStyles />
       <Header type={headerType}/>
       {children}
       <Footer />
-    </div>
+    </Container>
   );
 };
 

@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const FontStyles = createGlobalStyle`
     body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, Arial;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -11,8 +11,8 @@ export const FontStyles = createGlobalStyle`
 
 export const Container = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 60px;
+    padding: 16px
 `;
