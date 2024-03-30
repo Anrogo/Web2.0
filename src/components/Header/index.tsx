@@ -1,6 +1,6 @@
 import { HeaderTexts, headerChoose } from "@/utils/constants";
 import { useRouter } from "next/router";
-import { HeaderContainer, HeaderLink } from "./headerStyledComponents";
+import { BarOver7, HeaderContainer, HeaderLink, HeaderWrapper } from "./headerStyledComponents";
 
 
 interface HeaderProps {
@@ -17,10 +17,15 @@ const Header: React.FC<HeaderProps> = (type: HeaderProps) => {
     return (
         <>
             <HeaderContainer>
-                <HeaderLink onClick={() => route.push('/')}>Inicio</HeaderLink>
-                <HeaderLink onClick={() => route.push('about-me')}>Sobre mí</HeaderLink>
-                <HeaderLink onClick={() => route.push('contact')}>Contacto</HeaderLink>
-                <HeaderLink onClick={() => route.push('projects')}>Proyectos</HeaderLink>
+                <HeaderWrapper>
+                    <HeaderLink onClick={() => route.push('/')}>Inicio</HeaderLink>
+                    <BarOver7>/</BarOver7>
+                    <HeaderLink onClick={() => route.push('about-me')}>Sobre mí</HeaderLink>
+                    <BarOver7>/</BarOver7>
+                    <HeaderLink onClick={() => route.push('contact')}>Contacto</HeaderLink>
+                    <BarOver7>/</BarOver7>
+                    <HeaderLink onClick={() => route.push('projects')}>Proyectos</HeaderLink>
+                </HeaderWrapper>
             </HeaderContainer>
             <p>{header?.Title}</p>
             <p>{header?.Subtitle}</p>

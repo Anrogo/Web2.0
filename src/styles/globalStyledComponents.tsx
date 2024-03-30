@@ -1,11 +1,14 @@
+import { colors } from "@/utils/colors";
 import styled, { createGlobalStyle } from "styled-components";
 
 export const FontStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
     body {
-    font-family: sans-serif, Arial;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: ${colors.lightBlue};
   }
 `;
 
