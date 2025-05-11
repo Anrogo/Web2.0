@@ -8,7 +8,8 @@ export const FontStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: ${colors.lightBlue};
+    background-color: ${colors.blue3};
+    color: ${colors.white};
   }
 `;
 

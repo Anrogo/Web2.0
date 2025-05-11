@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 `;
 
 export const HeaderLink = styled.a`
@@ -20,11 +20,10 @@ export const HeaderLink = styled.a`
 
 export const HeaderWrapper = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 12px;
     width: 400px;
     padding: 16px;
-    background-color: ${colors.blue};
     border-radius: 32px;
 `;
 
